@@ -1,39 +1,48 @@
 body{
-    background-color:burlywood
+    width: 100vw;
+    height: 100vh;
 }
 
-p{
-    color:ivory;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+
+
+#container {
+    background-color: #EEEEEE;
+    width: 100vw;
+    height: 50vh;
+
+    /* display flex is the keyword to set up autolayout */
+    display: flex;
+    /* what direction the children will face */
+    flex-direction: row;
+
+    /*we center on both axis*/
+    justify-content: center;
+    align-items: center;
+
+    /* we add a gap between the boxes*/
+    gap: 20px;
+
 }
 
-li{
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+.box{
+    background-color: #888888;
+    width: 200px;
+    height: 200px;
+
 }
 
-#coconuts{
-    color: white;
-    font-size: 26px;
-    font-weight: italic;
-    font-family: Arial, Helvetica, sans-serif;
+.card{
+    background-color:#C9E39A;
+    padding: 16px;
+
+    /* add rounded coners to the card */
+    border-radius: 8px;
+
+    width:24%;
 }
 
-.black-bg{
-    background-color: black;
-    color: white;
-
-    padding: 0px 32px;
-    margin: 64px;
-}
-
-#bob{
-    color: white;
-    font-size: 26px;
-    font-weight: italic;
-    font-family: Arial, Helvetica, sans-serif;
+.section{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
